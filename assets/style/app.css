@@ -192,9 +192,9 @@
 
 .file-list {
     color: #47525d;
-    margin: 0 10px;
-    width: 7%;
-    float: left
+    margin-right: 20px;
+    height: 70px;
+    float: left;
 }
 
 .file-list:hover {
@@ -206,8 +206,8 @@
     clear: both;
     display: block;
     margin: auto;
-    width: 70%;
-    max-height: 44px
+    height: 60px;
+    width: 60px;
 }
 
 .file-list p {

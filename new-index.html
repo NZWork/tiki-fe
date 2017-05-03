@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>仪表盘</title>
+    <link href="https://cdn.bootcss.com/Primer/5.1.0/css/primer.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/select2/4.0.3/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/app.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="header">
+        <div class="container">
+            <a class="logo">
+                <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>                A Project of GayHub by GayLiu
+            </a>
+            <ul class="nav float-right">
+                <li>
+                    <a href="">创建</a>
+                </li>
+                <li>
+                    <a href="">Neo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- container -->
+    <div class="container m-t-40">
+        <div class="columns">
+            <div class="four-fifths column">
+                <select class="select2">
+                  <option value="AL">x/hello-tiki</option>
+                  <option value="WY">tiki/cookbook</option>
+                </select>
+            </div>
+            <div class="one-fifth column">
+                <div class="btn-group">
+                    <button class="btn btn-sm" type="button">创建</button>
+                    <button class="btn btn-sm" type="button">生成 Wiki</button>
+                    <button class="btn btn-sm" type="button">设置</button>
+                </div>
+            </div>
+            <div class="one-fifth column m-t-20">
+                <button class="btn" type="button">上一层</button>
+            </div>
+        </div>
+        <div class="columns m-t-40">
+            <a class="file-list" href="#">
+                <img src="assets/images/file.png">
+                <p class="text-center">test-file</p>
+            </a>
+            <a class="file-list" href="#">
+                <img src="assets/images/dir.png">
+                <p class="text-center">柳文杰.avi</p>
+            </a>
+        </div>
+    </div>
+    <!-- end container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdn.bootcss.com/select2/4.0.3/js/select2.full.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $(".select2").select2();
+    });
+    </script>
+</body>
+
+</html>
