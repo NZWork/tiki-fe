@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>编辑文档</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/editormd/css/editormd.min.css" />
+    <link rel="stylesheet" href="assets/style/app.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand">Tiki</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">x/wiki <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="download">
+                            <li>x</li>
+                            <li><a href="./bootstrap.min.css">dns</a></li>
+                            <li><a href="./bootstrap.min.css">proton</a></li>
+                            <li><a href="./bootstrap.css">tiki</a></li>
+                            <li class="divider"></li>
+                            <li>组织</li>
+                            <li><a href="./bootswatch.less">bootswatch.less</a></li>
+                            <li><a href="./_variables.scss">_variables.scss</a></li>
+                            <li><a href="./_bootswatch.scss">_bootswatch.scss</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">添加 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="download">
+                            <li><a href="http://jsfiddle.net/bootswatch/gqhenoox/">新建项目</a></li>
+                            <li><a href="http://jsfiddle.net/bootswatch/gqhenoox/">新建组织</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Neo</a>
+                        <ul class="dropdown-menu" aria-labelledby="download">
+                            <li><a href="http://jsfiddle.net/bootswatch/gqhenoox/">个人主页</a></li>
+                            <li><a href="./bootstrap.min.css">账号设置</a></li>
+                            <li><a href="./bootstrap.css">帮助</a></li>
+                            <li><a href="./variables.less">退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- container -->
+    <div style="margin-top:64px">
+        <input class="form-control" value="Tiki Cookbook">
+        <div id="main">
+            <textarea  style="display:none;" id="content"></textarea>
+        </div>
+    </div>
+    <!-- end container -->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/editormd/editormd.min.js"></script>
+    <script type="text/javascript">
+    var testEditor;
+
+    $(function() {
+        testEditor = editormd("main", {
+            width   : "100%",
+            height  : 640,
+            syncScrolling : "single",
+            path    : "assets/editormd/lib/"
+        });
+    });
+
+    </script>
+</body>
+
+</html>
