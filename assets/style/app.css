@@ -37,6 +37,7 @@
     color: #fff;
 }
 
+
 /* Base */
 
 .p-0 {
@@ -188,6 +189,7 @@
     min-height: 50px;
 }
 
+
 /* Dashboard */
 
 .file-list {
@@ -219,6 +221,7 @@
     background-color: #24292e
 }
 
+
 /* New */
 
 #new {
@@ -228,4 +231,17 @@
 
 #new .title {
     text-align: left;
+}
+
+.repo-list {
+    margin-top: 32px;
+}
+
+.repo-list li {
+    padding-bottom: 12px;
+    border-bottom: 1px #e1e4e8 solid !important;
+}
+
+.repo-list .latest-update {
+    margin-right: 32px;
 }
