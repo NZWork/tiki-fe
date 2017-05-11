@@ -94,7 +94,6 @@ label {
     height: 30px
 }
 
-@link-hover-color :rgba(89, 145, 250, 1) @default-color: #464d5c;
 @-webkit-keyframes fadeIn {
     0% {
         visibility: hidden;
@@ -1674,7 +1673,7 @@ label {
     transition: all .15s ease-in-out;
     margin-left: 40px;
     margin-right: 0;
-    font-weight: 200
+    font-weight: bold;
 }
 
 .landing-page .navbar .menu li, .landing-page .navbar .menu li.menu-item-login button {
