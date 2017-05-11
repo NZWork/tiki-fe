@@ -1,3 +1,4 @@
+<!-- header -->
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -6,55 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>编辑文档</title>
+    <title>Hello Tiki · Tiki Paper</title>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+    <link href="https://sindresorhus.com/github-markdown-css/github-markdown.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap-select/2.0.0-beta1/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/editormd/css/editormd.min.css" />
-    <link rel="stylesheet" href="assets/style/app.css">
+    <link rel="stylesheet" href="https://tiki.im/editormd/css/editormd.min.css" />
+
+    <link rel="stylesheet" href="https://tiki.im/css/app.css">
 </head>
 
 <body>
+
+
     <!-- navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a href="../" class="navbar-brand">Tiki</a>
+                <a href="../" class="navbar-brand">Tiki-T</a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
             </div>
             <div class="navbar-collapse collapse" id="navbar-main">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">x/wiki <span class="caret"></span></a>
-                        <ul class="dropdown-menu" aria-labelledby="download">
-                            <li>x</li>
-                            <li><a href="./bootstrap.min.css">dns</a></li>
-                            <li><a href="./bootstrap.min.css">proton</a></li>
-                            <li><a href="./bootstrap.css">tiki</a></li>
-                            <li class="divider"></li>
-                            <li>组织</li>
-                            <li><a href="./bootswatch.less">bootswatch.less</a></li>
-                            <li><a href="./_variables.scss">_variables.scss</a></li>
-                            <li><a href="./_bootswatch.scss">_bootswatch.scss</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">添加 <span class="caret"></span></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class="fa fa-plus" aria-hidden="true"></i> <span class="caret"></span></a>
                         <ul class="dropdown-menu" aria-labelledby="download">
                             <li><a href="http://jsfiddle.net/bootswatch/gqhenoox/">新建项目</a></li>
                             <li><a href="http://jsfiddle.net/bootswatch/gqhenoox/">新建组织</a></li>
@@ -62,8 +52,13 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Neo</a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">
+                            <img src="https://pbs.twimg.com/profile_images/831518614561837058/ytvJfYOx_400x400.jpg" class="img-rounded" width="20px" height="20px">
+                            <span class="caret"></span>
+                        </a>
                         <ul class="dropdown-menu" aria-labelledby="download">
+                            <li><a href=""><b>GaLiGayGay Neo</b></a></li>
+                            <li class="divider"></li>
                             <li><a href="http://jsfiddle.net/bootswatch/gqhenoox/">个人主页</a></li>
                             <li><a href="./bootstrap.min.css">账号设置</a></li>
                             <li><a href="./bootstrap.css">帮助</a></li>
@@ -75,34 +70,285 @@
         </div>
     </div>
     <!-- end navbar -->
+    <!-- //header -->
 
     <!-- container -->
     <div style="margin-top:64px">
-        <input class="form-control" value="Tiki Cookbook">
+        <input class="form-control" value="Tiki Cookbook Gaygay">
         <div id="main">
-            <textarea  style="display:none;" id="content"></textarea>
+            <textarea style="display:none;" id="content"></textarea>
         </div>
     </div>
     <!-- end container -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="assets/editormd/editormd.min.js"></script>
-    <script type="text/javascript">
-    var testEditor;
-
-    $(function() {
-        testEditor = editormd("main", {
-            width   : "100%",
-            height  : 640,
-            syncScrolling : "single",
-            path    : "assets/editormd/lib/"
-        });
-    });
-
-    </script>
+    <!-- header -->
 </body>
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap-select/2.0.0-beta1/js/bootstrap-select.min.js"></script>
+
 </html>
+<!-- //header -->
+
+<script src="https://tiki.im/editormd/editormd.min.js"></script>
+<script src="https://cdn.bootcss.com/diff_match_patch/20121119/diff_match_patch.js"></script>
+<script src="https://tiki.im/js/ot.js"></script>
+<script src="https://tiki.im/js/util.js"></script>
+
+<script type="text/javascript">
+    var tikiEditor;
+    $(document).ready(function() {
+        tikiEditor = editormd("main", {
+            width: "100%",
+            height: 640,
+            syncScrolling: "single",
+            path: "https://tiki.im/editormd/lib/",
+            onload: function() {
+                connect('4Y8a2xD964iZupOuzJfH15CSiQ3WBAMC+Anx0ADJ44eXncCKDg3SnKPZjIgNzBH+iqeq0ZjF0M/GztOdFQ==', '18C5D7D0-52C534B9-09246833-67AF41F1')
+            },
+            onchange: function() {
+                sync()
+            }
+        });
+    })
+
+    // OT
+    var Changeset = ot.Changeset;
+    var engine = new diff_match_patch;
+    var his = "";
+    var seq = 0;
+    var ver = 0;
+    var otLock = false;
+
+    // WS
+    var conn = null
+    var target = "wss://multiverse.service.tiki.im/sync"
+    var uid = 0
+
+    // Switcher
+    var send = 0
+    var lastMsg = 0
+    var didClose = false
+    var typing = false
+
+    var ChangesetQueueLock = false
+    var ChangesetQueue = []
+
+    const OP_RETAIN = 0
+    const OP_INSERT = 1
+    const OP_DELETE = 2
+
+    const OT_MSG = 0
+    const ACK_MSG = 1
+    const FORCE_SYNC_MSG = 2
+    const INIT_MSG = 3
+    const ACTIVE_SYNC_MSG = 4
+    const funcNameRegex = /function (.{1,})\(/
+
+    //  Change 转换为 一个 JSON
+    function changeToJSON(change) {
+        var data = new Object()
+        var ops = new Object()
+        ops.op = new Array()
+        var shouldSend = false
+        var last = change.length - 1
+        for (var i = 0; i < change.length; i++) {
+            var results = (funcNameRegex).exec((change[i]).constructor.toString())
+            var op = (results && results.length > 1) ? results[1] : ''
+
+            if (op == 'Retain') {
+                if (i == last) { // 最后一个retain扔掉
+                    continue
+                }
+            } else {
+                shouldSend = true
+            }
+
+            switch (op) {
+                case 'Retain':
+                    change[i]['type'] = OP_RETAIN
+                    break
+                case 'Skip':
+                    change[i]['type'] = OP_DELETE
+                    break
+                case 'Insert':
+                    change[i]['type'] = OP_INSERT
+                    break
+                default:
+            }
+            ops.op.push(change[i])
+        }
+        if (shouldSend) {
+            ops.adden = change.addendum
+            ops.inputLength = change.inputLength
+            ops.outputLength = change.outputLength
+            ops.removen = change.removendum
+
+            seq++
+            data['type'] = OT_MSG
+            data['seq'] = seq
+            data['uid'] = uid
+            data['ver'] = ver
+            data['ops'] = ops
+            return JSON.stringify(data)
+        }
+    }
+
+    function JSONToChange(json) {
+        var ops = []
+        if (json == "") {
+            return
+        }
+
+        data = JSON.parse(json)
+
+        var pos = tikiEditor.getCursor()
+        // var pos = getCaretPosition('main')
+        // var cursorDrift = false
+
+        if (data.type == INIT_MSG) {
+            console.log('user data init')
+            uid = data.uid
+            ver = data.ver
+        }
+
+        if (data['type'] == ACK_MSG) {
+            // console.log('ack')
+            ver = data.ver
+            ChangesetQueueLock = false // unclock
+            return
+        }
+
+        if (data['type'] == FORCE_SYNC_MSG) {
+            // console.log('force sync')
+            // clean all the content
+            his = ''
+            tikiEditor.setMarkdown('')
+            seq = data.seq
+        }
+
+        for (var i = 0; i < data.ops.op.length; i++) {
+            var current = data.ops.op[i]
+
+            switch (current['type']) {
+                case OP_RETAIN:
+                    ops.push(new ot.Retain(current.length))
+                    // if (current.length < pos) {
+                    //     cursorDrift = true
+                    // }
+                    break
+                case OP_INSERT:
+                    ops.push(new ot.Insert(current.length))
+                    break;
+                case OP_DELETE:
+                    ops.push(new ot.Skip(current.length))
+                    break;
+            }
+        }
+
+        var change = new ot.Changeset(ops)
+        change.addendum = data.ops.adden
+        change.removendum = data.ops.removen
+        change.inputLength = data.ops.inputLength
+        change.outputLength = data.ops.outputLength
+
+        var text = tikiEditor.getMarkdown()
+        try {
+            his = change.apply(text)
+        } catch (e) {
+            // console.log(e)
+            // Empty all
+            ChangesetQueue = []
+            ChangesetQueueLock = false // unclock
+            sendMsg(JSON.stringify({
+                'type': ACTIVE_SYNC_MSG,
+                'uid': uid
+            }))
+            return null
+        }
+
+        // if (cursorDrift) {
+        //     pos += change.addendum.length
+        // }
+
+        ver = data.ver
+        return pos
+    }
+
+    function sync() {
+        var text = tikiEditor.getMarkdown()
+        var diff = engine.diff_main(his, text)
+        if (diff.length == 1 && diff[0][0] == 0) { // 移动，选择
+            return
+        }
+        var change = Changeset.fromDiff(diff)
+        his = text
+        ChangesetQueue.push(change)
+    }
+
+    // Queue consumer
+    var changesetQueueConsumer = setInterval(function() {
+        if (!ChangesetQueueLock) { // get ACK
+            var merged = ChangesetQueue.shift()
+            while (ChangesetQueue.length != 0) {
+                merged = merged.merge(ChangesetQueue.shift())
+            }
+            if (merged != null) {
+                var msg = changeToJSON(merged)
+                if (msg != null) {
+                    sendMsg(msg)
+                } else {
+                    ChangesetQueueLock = true // lock
+                }
+            }
+        }
+    }, 1000)
+
+    function sendMsg(msg) {
+        // console.log("send: " + msg)
+        ChangesetQueueLock = true // lock
+        conn.send(msg)
+    }
+
+    function connect(token, pubkey) {
+        if (token.length == 0) {
+            alert("token invalid")
+            return
+        }
+
+        conn = new WebSocket(target + "?token=" + encodeURIComponent(token) + '&pubkey=' + encodeURIComponent(pubkey))
+        conn.onopen = function() {
+            console.log("connected to sync ")
+        }
+        conn.onclose = function(e) {
+            didClose = true
+            console.log("connection closed (" + e.code + ")")
+        }
+
+        conn.onmessage = function(e) {
+            var data = e.data
+            // console.log('received ' + data)
+            var modedPos = JSONToChange(e.data)
+            if (modedPos == null) {
+                return
+            }
+            tikiEditor.setMarkdown(his)
+            tikiEditor.setCursor(modedPos)
+            // setCaretPosition('main', modedPos)
+        }
+
+        conn.onclose = function(e) {
+            console.log('closed [' + e.code + '] ' + e.reason)
+        }
+    }
+
+
+    function disconnect() {
+        didClose = true
+        conn.close()
+    }
+</script>
