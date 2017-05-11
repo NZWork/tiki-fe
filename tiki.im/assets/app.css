@@ -56,17 +56,17 @@ iframe {
 
 @font-face {
     font-family: Montserrat;
-    src: url(https://data.zi.com/07689d4eaaa3d530d58826b5d7f84735.ttf) format('truetype')
+    src: url('https://data.zi.com/07689d4eaaa3d530d58826b5d7f84735.ttf') format('truetype')
 }
 
 @font-face {
     font-family: FZYANS_ZHUN;
-    src: url(fonts/FZYanSJW_Zhun.ttf) format("truetype")
+    src: url('fonts/FZYanSJW_Zhun.ttf') format("truetype")
 }
 
 @font-face {
     font-family: FZYANS_XIAN;
-    src: url(fonts/FZYanSJW_Xian.ttf) format("truetype")
+    src: url('fonts/FZYanSJW_Xian.ttf') format("truetype")
 }
 
 .control-group {
@@ -917,7 +917,7 @@ label {
 }
 
 .design .designers .design-preview-phone {
-    background-image: url(https://data.zi.com/f077d7b33c7825f64deaccaf4b8e5f31.png);
+    background-image: url('https://data.zi.com/f077d7b33c7825f64deaccaf4b8e5f31.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 263px;
@@ -1240,22 +1240,6 @@ label {
     float: left
 }
 
-.product-story .product-info1 .img-info .img-outline {
-    background: url(https://data.zi.com/7908ce3ed5797aad9e33120248f1a111.png);
-    width: 400px;
-    height: 442px
-}
-
-.product-story .product-info1 .img-info .img-words {
-    background: url(https://data.zi.com/bf4496ba43cd7208dd96ebecf6b03bb4.png);
-    background-size: contain;
-    width: 387px;
-    height: 418px;
-    position: absolute;
-    left: -30px;
-    top: 70px
-}
-
 .product-story .product-info1 .word-info {
     margin-left: 52px;
     float: right
@@ -1265,22 +1249,6 @@ label {
     width: 400px;
     height: 438px;
     float: right
-}
-
-.product-story .product-info2 .img-info .img-outline {
-    background: url(https://data.zi.com/705d9139d62498b6996c914b1db5d8e2.png);
-    width: 400px;
-    height: 438px
-}
-
-.product-story .product-info2 .img-info .img-words {
-    background: url(https://data.zi.com/163ed3d23cb7b000b662d27c4107c255.png);
-    width: 577px;
-    height: 431px;
-    background-size: contain;
-    position: absolute;
-    left: -150px;
-    top: 70px
 }
 
 .product-story .product-info3 {
@@ -1293,106 +1261,8 @@ label {
     float: left
 }
 
-.product-story .product-info3 .img-info .img-outline {
-    background: url(https://data.zi.com/943d68d393a5609a9eaa32adc7888e2a.png);
-    width: 400px;
-    height: 442px
-}
-
-.product-story .product-info3 .img-info .img-words {
-    background: url(https://data.zi.com/0fb9952066deb4f3b55d134d9ab3e64c.png);
-    background-size: contain;
-    width: 416px;
-    height: 382px;
-    position: absolute;
-    left: -50px;
-    top: 85px
-}
-
 .product-story .product-info3 .word-info {
     float: right
-}
-
-.begin-use {
-    border-top: 1px solid rgba(208, 211, 217, .2);
-    height: 210px;
-    background: url(https://data.zi.com/36238584f89ae7e4d111c7e4653714f2.svg) repeat 0 -40px
-}
-
-.begin-use .bottom-title {
-    height: 100%;
-    margin-top: 50px;
-    float: left
-}
-
-.begin-use .bottom-title .bottom-logo {
-    border: .5px solid rgba(208, 211, 217, .2);
-    border-radius: 25px;
-    background: url(images/logo.png) no-repeat;
-    background-size: cover;
-    width: 112px;
-    height: 112px;
-    float: left;
-    margin-right: 56px
-}
-
-.begin-use .bottom-title .bottom-desc {
-    width: 384px;
-    float: left
-}
-
-.begin-use .bottom-title .bottom-desc h4 {
-    font-size: 28px;
-    color: #464d5c;
-    margin-bottom: 10px;
-    letter-spacing: 3.72px;
-    margin-top: 24px
-}
-
-.begin-use .bottom-title .bottom-desc h4, .begin-use .bottom-title .bottom-desc p {
-    font-family: PingFangSC-Light,'helvetica neue','hiragino sans gb',arial,'microsoft yahei ui','microsoft yahei',simsun,sans-serif；
-}
-
-.begin-use .bottom-title .bottom-desc p {
-    color: #6d7075;
-    font-size: 16px;
-    letter-spacing: -.8px
-}
-
-.begin-use .bottom-btns {
-    float: right;
-    height: 50px;
-    margin-top: 82px
-}
-
-.begin-use .bottom-btns button {
-    vertical-align: middle
-}
-
-.begin-use .bottom-btns .android, .begin-use .bottom-btns .app-store {
-    font-family: PingFangSC-Light,'helvetica neue','hiragino sans gb',arial,'microsoft yahei ui','microsoft yahei',simsun,sans-serif；
-}
-
-.begin-use .bottom-btns .font-android:before {
-    left: 24px;
-    top: 16px;
-    font-size: 18px;
-    color: #fff;
-    position: absolute
-}
-
-.begin-use .bottom-btns .app-store {
-    padding-left: 64px;
-    padding-right: 42px;
-    margin-right: 20px
-}
-
-.begin-use .bottom-btns .app-store .icon-Apple:before {
-    left: 36px;
-    top: 14px;
-    font-size: 18px;
-    color: #fff;
-    position: absolute
 }
 
 .bar-item {
